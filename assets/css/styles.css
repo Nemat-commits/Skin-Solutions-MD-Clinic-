@@ -374,14 +374,7 @@ body.no-scroll { overflow: hidden; }
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: var(--gap);
 }
-.hero__copy {
-  grid-column: 1 / span 6;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
-  padding-bottom: 1.5rem;
-}
+.hero__copy { grid-column: 1 / span 6; }
 .hero__label { color: var(--ink-3); }
 .hero__label .n { color: var(--accent); }
 .hero__title { margin-top: 1.1rem; max-width: 14ch; }
@@ -402,7 +395,7 @@ body.no-scroll { overflow: hidden; }
 .hero__figure { grid-column: 8 / span 5; margin: 0; align-self: start; }
 .hero__figure img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border: 1px solid var(--rule);
 }

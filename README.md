@@ -161,7 +161,7 @@ Measured from the working tree:
 
 | Asset | Size |
 | --- | --- |
-| CSS | 28,504 B (5,820 B gzipped) |
+| CSS | 28,386 B (5,816 B gzipped) |
 | JavaScript | 5,318 B (1,842 B gzipped) |
 | Fonts (3 files) | 64,524 B |
 | Images (2 files) | 63,517 B |
