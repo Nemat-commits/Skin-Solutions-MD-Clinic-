@@ -14,7 +14,7 @@
   }
 
   /* ---- Menu drawer ----------------------------------------------------- */
-  var toggle = document.querySelector(".menu-toggle");
+  var toggle = document.querySelector(".menu-btn");
   var drawer = document.getElementById("drawer");
   var header = document.querySelector(".site-header");
   var body = document.body;
