@@ -33,7 +33,7 @@ Or open `index.html` directly. Opening the file locally works, but a server is b
 assets/
   css/styles.css      all styles, ~30 KB unminified
   js/main.js          header state, drawer, live open/closed status, form → WhatsApp
-  fonts/              Instrument Serif + Karla (variable), self-hosted, SIL OFL
+  fonts/              Archivo + Karla (both variable), self-hosted, SIL OFL
   img/                optimised responsive JPEGs (560–1400 px wide)
   favicon.svg
 images/               original, unoptimised image masters (not referenced by the site)
@@ -72,15 +72,17 @@ a sense of the area. Swap in a real embed if the clinic prefers.
 
 ## Design notes
 
-- Warm paper, ink, olive and a single terracotta accent; Instrument Serif for display, Karla for
-  text. Both self-hosted — no Google Fonts request, no layout shift, and no third-party tracking
-  on a health-related site.
-- Deliberately editorial rather than template-like: asymmetric hero with an overlapping hours
-  plate, numbered treatment index, hairline rules instead of cards, and a proper type scale.
+- Cool off-white paper, graphite ink, deep pine and a single clinical teal accent. Archivo — a
+  grotesque with tight, confident letterforms — carries the headings, numbers and interface;
+  Karla keeps long copy warm and readable. Both self-hosted — no Google Fonts request, no layout
+  shift, and no third-party tracking on a health-related site.
+- No romantic serif, no italic accent word, no cream-and-clay palette: the three shorthand
+  signals of a generated site. The layout earns its character instead through an asymmetric hero
+  with an overlapping hours plate, a numbered treatment index, and hairline rules in place of cards.
 - Responsive from 320 px up. Mobile gets a full-screen menu and a persistent Call/WhatsApp bar.
 - Accessibility: skip link, semantic landmarks, visible focus states, `aria-current` on nav,
   labelled form fields, reduced-motion support, and content remains visible without JavaScript.
-- Performance: no libraries, ~86 KB of fonts, lazy-loaded images with width/height set, images
+- Performance: no libraries, ~68 KB of fonts, lazy-loaded images with width/height set, images
   served at three widths.
 
 ## Editing quickly
@@ -88,7 +90,8 @@ a sense of the area. Swap in a real embed if the clinic prefers.
 - **Phone / WhatsApp** — appears as `tel:` and `wa.me` links across all pages, `WHATSAPP` and
   `PHONE` constants in `assets/js/main.js`, and the `telephone` field in the JSON-LD on `index.html`.
 - **Hours** — the visible copy (footer, home, visit page) and `HOURS` in `main.js`.
-- **Colours and type** — the `:root` token block at the top of `styles.css`.
+- **Colours and type** — the `:root` token block at the top of `styles.css` (`--display` is
+  Archivo, `--sans` is Karla; swap the two `@font-face` sources to change either).
 
 ## Images
 
